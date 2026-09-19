@@ -1,14 +1,20 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<title> Web Sitesi Teklif | TechCareer Akademi </title>
-<link rel="stylesheet" href="style.css" >
-</head>
-<body>
- <main class="sayfa">
+<!DOCTYPE html>
+<html lang="tr">
 
- <section class="teklif-kutusu">
-   <div class="baslik-alani">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Sitesi Teklif | Opendart Akademi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="sayfa">
+        <section class="teklif-kutusu">
+
+            <div class="baslik-alani">
                 <span class="marka">OPENDART AKADEMİ</span>
 
                 <h1>Web Siteniz İçin Teklif Alın</h1>
@@ -18,14 +24,29 @@
                     Talebinizi inceleyerek sizinle iletişime geçelim.
                 </p>
             </div>
- </section>
-</main>
 
+            <form id="teklifFormu">
+                <div class="iki-sutun">
 
+                    <div class="form-grubu">
+                        <label for="ad">Adınız</label>
 
-<script src="app.js"> <script>
+                        <input type="text" id="ad" name="ad" maxlength="50" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="form-grubu">
+                        <label for="soyad">Soyadınız</label>
+
+                        <input type="text" id="soyad" name="soyad" maxlength="50" autocomplete="family-name" required>
+                    </div>
+
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
 </body>
-
-
 
 </html>
