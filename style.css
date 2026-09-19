@@ -73,7 +73,6 @@ h1 {
     font-weight: 700;
 }
 
-
 input,
 select,
 textarea {
@@ -153,7 +152,6 @@ button:disabled {
     color: #721c24;
     background-color: #f8d7da;
 }
-
 
 @media (max-width: 650px) {
     .teklif-kutusu {

@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Web Sitesi Teklif | Opendart Akademi</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Opendart Akademi web sitesi teklif formu"
+    >
+
+    <title>Web Sitesi Teklifi | TechCareer Akademi</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <main class="sayfa">
+
         <section class="teklif-kutusu">
 
             <div class="baslik-alani">
-                <span class="marka">OPENDART AKADEMİ</span>
+                <span class="marka">TECHCAREER AKADEMİ</span>
 
                 <h1>Web Siteniz İçin Teklif Alın</h1>
 
@@ -26,22 +36,38 @@
             </div>
 
             <form id="teklifFormu">
+
                 <div class="iki-sutun">
 
                     <div class="form-grubu">
                         <label for="ad">Adınız</label>
 
-                        <input type="text" id="ad" name="ad" maxlength="50" autocomplete="given-name" required>
+                        <input
+                            type="text"
+                            id="ad"
+                            name="ad"
+                            maxlength="50"
+                            autocomplete="given-name"
+                            required
+                        >
                     </div>
 
                     <div class="form-grubu">
                         <label for="soyad">Soyadınız</label>
 
-                        <input type="text" id="soyad" name="soyad" maxlength="50" autocomplete="family-name" required>
+                        <input
+                            type="text"
+                            id="soyad"
+                            name="soyad"
+                            maxlength="50"
+                            autocomplete="family-name"
+                            required
+                        >
                     </div>
 
                 </div>
-                     <div class="form-grubu">
+
+                <div class="form-grubu">
                     <label for="email">E-posta adresiniz</label>
 
                     <input
@@ -53,7 +79,8 @@
                         required
                     >
                 </div>
-                 <div class="form-grubu">
+
+                <div class="form-grubu">
                     <label for="websiteAdi">
                         Teklif almak istediğiniz web sitesi
                     </label>
@@ -67,7 +94,8 @@
                         required
                     >
                 </div>
-                 <div class="form-grubu">
+
+                <div class="form-grubu">
                     <label for="websiteTuru">Web sitesi türü</label>
 
                     <select
@@ -96,7 +124,8 @@
                         </option>
                     </select>
                 </div>
-                   <div class="form-grubu">
+
+                <div class="form-grubu">
                     <label for="aciklama">
                         Projeniz hakkında kısa bilgi
                     </label>
@@ -110,7 +139,8 @@
                         required
                     ></textarea>
                 </div>
-                  <label class="onay-alani">
+
+                <label class="onay-alani">
                     <input
                         type="checkbox"
                         id="kvkkOnay"
@@ -122,23 +152,25 @@
                         değerlendirilmesi amacıyla kullanılmasını kabul ediyorum.
                     </span>
                 </label>
-                 <button type="submit" id="gonderButonu">
+
+                <button type="submit" id="gonderButonu">
                     Teklif Talebi Gönder
                 </button>
 
-                
                 <div
                     id="sonucMesaji"
                     class="sonuc-mesaji"
                     role="status"
                     aria-live="polite"
                 ></div>
+
             </form>
 
         </section>
+
     </main>
 
     <script src="app.js"></script>
-</body>
 
+</body>
 </html>
