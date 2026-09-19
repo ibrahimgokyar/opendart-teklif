@@ -41,6 +41,98 @@
                     </div>
 
                 </div>
+                     <div class="form-grubu">
+                    <label for="email">E-posta adresiniz</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        maxlength="150"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+                 <div class="form-grubu">
+                    <label for="websiteAdi">
+                        Teklif almak istediğiniz web sitesi
+                    </label>
+
+                    <input
+                        type="text"
+                        id="websiteAdi"
+                        name="websiteAdi"
+                        maxlength="150"
+                        placeholder="Örneğin: Kurumsal firma web sitesi"
+                        required
+                    >
+                </div>
+                 <div class="form-grubu">
+                    <label for="websiteTuru">Web sitesi türü</label>
+
+                    <select
+                        id="websiteTuru"
+                        name="websiteTuru"
+                        required
+                    >
+                        <option value="">Seçiniz</option>
+                        <option value="Kurumsal Web Sitesi">
+                            Kurumsal Web Sitesi
+                        </option>
+                        <option value="E-Ticaret Sitesi">
+                            E-Ticaret Sitesi
+                        </option>
+                        <option value="Eğitim Platformu">
+                            Eğitim Platformu
+                        </option>
+                        <option value="Kişisel Web Sitesi">
+                            Kişisel Web Sitesi
+                        </option>
+                        <option value="Mobil Uygulama">
+                            Mobil Uygulama
+                        </option>
+                        <option value="Diğer">
+                            Diğer
+                        </option>
+                    </select>
+                </div>
+                   <div class="form-grubu">
+                    <label for="aciklama">
+                        Projeniz hakkında kısa bilgi
+                    </label>
+
+                    <textarea
+                        id="aciklama"
+                        name="aciklama"
+                        rows="6"
+                        maxlength="2000"
+                        placeholder="Web sitenizde bulunmasını istediğiniz özellikleri yazabilirsiniz."
+                        required
+                    ></textarea>
+                </div>
+                  <label class="onay-alani">
+                    <input
+                        type="checkbox"
+                        id="kvkkOnay"
+                        required
+                    >
+
+                    <span>
+                        İletişim bilgilerimin teklif talebimin
+                        değerlendirilmesi amacıyla kullanılmasını kabul ediyorum.
+                    </span>
+                </label>
+                 <button type="submit" id="gonderButonu">
+                    Teklif Talebi Gönder
+                </button>
+
+                
+                <div
+                    id="sonucMesaji"
+                    class="sonuc-mesaji"
+                    role="status"
+                    aria-live="polite"
+                ></div>
             </form>
 
         </section>
